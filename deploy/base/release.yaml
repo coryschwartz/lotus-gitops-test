@@ -34,6 +34,8 @@ spec:
         enabled: true
         storageClassName: "ebs-csi"
         size: "12000Gi"
+    image:
+      tag: mainnet-v1.13.0
 
 
 ---
