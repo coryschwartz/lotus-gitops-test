@@ -21,6 +21,21 @@ spec:
         secretName: lotus-0-jwt-secrets
       libp2p:
         secretName: lotus-0-libp2p-secrets
+    importSnapshot:
+      enabled:
+        false
+    daemonConfig:
+      [API]
+        ListenAddress = "/ip4/0.0.0.0/tcp/1234/http"
+      [Libp2p]
+        ListenAddresses = ["/ip4/0.0.0.0/tcp/1347"]
+    persistence:
+      datastore:
+        enabled: true
+        storageClassName: "ebs-csi"
+        size: "12000Gi"
+
+
 ---
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
