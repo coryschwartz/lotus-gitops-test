@@ -4,5 +4,5 @@ kind: HelmRepository
 metadata:
   name: filecoin
 spec:
-  url: https://filecoin-project.github.io
+  url: https://filecoin-project.github.io/helm-charts
   interval: 10m
